@@ -1,0 +1,177 @@
+html {
+
+box-sizing: border-box;
+
+ }
+
+*, *:before, *:after {
+
+box-sizing: inherit;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family:Hind guntur;
+    background-color: #143447;
+}
+
+header{
+    display: flex;
+    background-color:#143447 ;
+    width: 100%;
+    height: 25.1vh;
+    align-items: center;
+    border-bottom: solid 0.3vh white;
+}
+
+a{
+    color: red;
+    font-size: 1.2vw;
+    margin-left: 1.5vw;
+    
+    text-decoration: none;
+    position: relative;
+
+    
+}
+nav{
+    margin-left: auto;
+    margin-right: 4vw;
+    height: 5vh;
+   
+    
+    
+}
+
+a::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -1px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background: red;
+    transition: 0.3s ease;
+}
+
+a:hover {
+   
+    transition: color 0.5s ease;
+    
+}
+
+a:hover::after {
+    width: 100%;
+}   
+
+
+#logo{
+    inline-size: 25vh;
+    aspect-ratio: 1;
+    object-fit: cover;
+    
+}
+
+main{
+    /* background-color: lightblue; */
+    
+    
+    margin:5vw;    
+    #sobre-mi{
+        /* background-color:lightblue; */
+        /* width: 80%; */
+        height: 80vh;
+        margin-bottom: 5vw;
+        display: flex;
+        article{
+            
+            margin-left:10vw;
+
+            .titulo{
+           
+            color: red;
+            font-size: 2.5vw;
+
+           
+            }
+            .texto{
+                color: white;
+                font-size:1.3vw;
+                text-align: justify;
+                /* background-color: red; */
+                width: 85vh;
+            }
+        }
+
+    
+        .foto{
+            margin-left: auto;
+            margin-right:7vw;
+            margin-top:7vh;
+
+            img{
+                inline-size: 40vh;
+                aspect-ratio: 1;
+                object-fit: cover;
+                border-radius:10vw;
+            }
+        }
+        
+        
+
+    }
+     #proyectos{
+        
+   
+        height: 80vh;
+        
+        .titulo{
+           
+            color: red;
+            font-size: 2.5vw;
+            
+           
+        }
+        
+        article:nth-child(2){
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) 2fr;
+        gap:10vw;
+        
+        height:60vh;
+        
+        /*grid-template-areas: "p1 p2 p3 p3";
+        #p1 { grid-area: p1;}
+        #p2 { grid-area: p2;}
+        #p3 { grid-area: p3;}*/
+
+        #p1, #p2, #p3{
+            background-color: yellow;
+        }
+        }
+        
+        
+        
+    }
+    #contacto{
+        margin-top: 10vh;
+        height: 80vh;
+        
+        .titulo{
+           
+            color: red;
+            font-size: 2.5vw;
+            
+           
+        }
+
+    }
+    
+}
+
+
