@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adrián Carbonell — Desarrollador Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<!-- ░░ CURSOR GLOW ░░ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ░░ NAVBAR ░░ -->
+<header class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">
+            <img src="img/logo.png" alt="AC">
+        </a>
+        <nav class="nav-links" id="navMenu">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <button class="hamburger" id="menuToggle" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<!-- ░░ HERO ░░ -->
+<section id="sobre-mi" class="hero">
+
+    <!-- Decorative grid -->
+    <div class="hero-grid-bg" aria-hidden="true">
+        <div class="grid-lines"></div>
+        <div class="grid-glow"></div>
+    </div>
+
+    <!-- Floating orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+    <div class="orb orb-3" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Disponible para trabajar
+        </div>
+
+        <h1 class="hero-title">
+            <span class="line-wrap"><span class="line">Adrián</span></span>
+            <span class="line-wrap"><span class="line accent-line">Carbonell</span></span>
+        </h1>
+
+        <p class="hero-sub">Desarrollador Web Full-Stack</p>
+
+        <p class="hero-desc">
+            Estudiante apasionado por construir experiencias web modernas,
+            eficientes y bien estructuradas. Enfocado en buenas prácticas,
+            código limpio y aprendizaje continuo.
+        </p>
+
+        <div class="hero-actions">
+            <a href="CV Adrián Carbonell.pdf" download class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar CV
+            </a>
+            <a href="https://github.com/AdrianCarbonell" target="_blank" class="btn-ghost">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                GitHub
+            </a>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-hint" aria-hidden="true">
+            <span>scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </div>
+
+    <!-- Decorative code snippet -->
+    <div class="hero-code-deco" aria-hidden="true">
+        <div class="code-line"><span class="kw">const</span> <span class="va">dev</span> = {</div>
+        <div class="code-line pad"><span class="key">nombre</span>: <span class="str">"Adrián Carbonell"</span>,</div>
+        <div class="code-line pad"><span class="key">rol</span>: <span class="str">"Web Developer"</span>,</div>
+        <div class="code-line pad"><span class="key">stack</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>],</div>
+        <div class="code-line pad"><span class="key">pasión</span>: <span class="num">∞</span></div>
+        <div class="code-line">}</div>
+    </div>
+
+</section>
+
+<!-- ░░ PROYECTOS ░░ -->
+<section id="proyectos" class="section projects-section">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-tag">02 — proyectos</span>
+            <h2>Trabajo <em>seleccionado</em></h2>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card featured">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span>JavaScript</span><span>HTML</span><span>CSS</span>
+                    </div>
+                    <h3>Generador de Contraseñas</h3>
+                    <p>Aplicación que genera contraseñas seguras permitiendo configurar longitud y tipos de caracteres. Interfaz intuitiva y resultados al instante.</p>
+                    <a href="https://github.com/" target="_blank" class="project-link">
+                        Ver proyecto
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                    </a>
+                </div>
+                <div class="project-deco">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" opacity="0.08">
+                        <circle cx="60" cy="60" r="55" stroke="#22c55e" stroke-width="1"/>
+                        <circle cx="60" cy="60" r="40" stroke="#22c55e" stroke-width="1"/>
+                        <circle cx="60" cy="60" r="25" stroke="#22c55e" stroke-width="1"/>
+                        <line x1="0" y1="60" x2="120" y2="60" stroke="#22c55e" stroke-width="0.5"/>
+                        <line x1="60" y1="0" x2="60" y2="120" stroke="#22c55e" stroke-width="0.5"/>
+                    </svg>
+                </div>
+            </article>
+
+            <article class="project-card coming">
+                <div class="project-number">02</div>
+                <div class="project-content">
+                    <div class="project-tags"><span>En desarrollo</span></div>
+                    <h3>Próximo proyecto</h3>
+                    <p>Actualmente en desarrollo. Pronto disponible.</p>
+                    <span class="project-link muted">Próximamente</span>
+                </div>
+            </article>
+
+            <article class="project-card coming">
+                <div class="project-number">03</div>
+                <div class="project-content">
+                    <div class="project-tags"><span>En desarrollo</span></div>
+                    <h3>Próximo proyecto</h3>
+                    <p>Actualmente en desarrollo. Pronto disponible.</p>
+                    <span class="project-link muted">Próximamente</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ░░ TECNOLOGÍAS ░░ -->
+<section id="tecnologias" class="section tech-section">
+    <div class="section-inner">
+        <div class="section-header">
+            <span class="section-tag">03 — tecnologías</span>
+            <h2>Mi <em>stack</em></h2>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/html.png" alt="HTML5"></div>
+                <span>HTML5</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/css.png" alt="CSS3"></div>
+                <span>CSS3</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/javascript.png" alt="JavaScript"></div>
+                <span>JavaScript</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/csharp.png" alt="C#"></div>
+                <span>C#</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/sql.png" alt="SQL"></div>
+                <span>SQL</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/aws-color.png" alt="AWS"></div>
+                <span>AWS</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon"><img src="img/docker.png" alt="Docker"></div>
+                <span>Docker</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ░░ CONTACTO ░░ -->
+<section id="contacto" class="section contact-section">
+    <div class="section-inner">
+        <div class="contact-grid">
+            <div class="contact-left">
+                <span class="section-tag">04 — contacto</span>
+                <h2>Trabajemos <em>juntos</em></h2>
+                <p>¿Tienes un proyecto en mente? Estoy abierto a nuevas oportunidades y colaboraciones.</p>
+                <div class="contact-info">
+                    <a href="mailto:adriancarbonell275@gmail.com" class="contact-detail">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+                        adriancarbonell275@gmail.com
+                    </a>
+                    <a href="https://github.com/AdrianCarbonell" target="_blank" class="contact-detail">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+                        github.com/AdrianCarbonell
+                    </a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mensaje</label>
+                        <textarea placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary full">
+                        Enviar mensaje
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
+<footer class="footer">
+    <div class="footer-inner">
+        <span>© 2026 Adrián Carbonell</span>
+        <span class="footer-sep">—</span>
+        <span>Desarrollado con HTML, CSS & JS</span>
+    </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    Mensaje enviado con éxito
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
