@@ -78,6 +78,23 @@ body.lang-fade-in .footer {
         opacity: 1 !important;
         pointer-events: auto;
     }
+    .orb,
+    .cursor-glow,
+    .grid-glow,
+    .grid-lines {
+        animation: none !important;
+        transition: none !important;
+    }
+    .orb,
+    .cursor-glow {
+        display: none !important;
+    }
+    .scroll-line::after {
+        animation: none !important;
+    }
+    .badge-dot {
+        animation: none !important;
+    }
 }
 
 .skip-link {
@@ -114,6 +131,12 @@ body.lang-fade-in .footer {
     z-index: 0;
     transform: translate(-50%, -50%);
     transition: left 0.15s ease, top 0.15s ease;
+}
+
+@media (hover: none) {
+    .cursor-glow {
+        display: none !important;
+    }
 }
 
 /* ══════════════════════════════════════
